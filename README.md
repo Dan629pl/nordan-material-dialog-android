@@ -54,7 +54,7 @@ dependencies {
 
 ## Screenshots
 
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs_small.png">
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs.png">
 
 ## Default dialogs types
 
