@@ -16,6 +16,8 @@ dependencies {
 ```
 <h2>Nordan Alert Dialog</h2>
 
+<h1>Custom Dialog</h1>
+
 ```diff
         new NordanAlertDialog.Builder(this)
                 .setAnimation(Animation.POP)
@@ -30,6 +32,7 @@ dependencies {
                 .onNegativeClicked(() -> {/* Do something here */})
                 .build().show();
 ```
+<h1>Minimal Dialog</h1>
 
 ```diff
               new NordanAlertDialog.Builder(this)
@@ -38,6 +41,19 @@ dependencies {
                       .setPositiveBtnText("single button")
                       .onPositiveClicked(() -> {/* Do something here */})
                       .build().show();
+```
+<h1>Dialog with DialogType</h1>
+
+```diff
+        new NordanAlertDialog.Builder(this)
+                    .setDialogType(DialogType.SUCCESS)
+                    .setAnimation(Animation.SLIDE)
+                    .isCancellable(true)
+                    .setTitle("Success!")
+                    .setMessage("Level complete!")
+                    .setPositiveBtnText("Great!")
+                    .onPositiveClicked(() -> {/* Do something here */})
+                    .build().show();
 ```
 
 <h2>Nordan Loading Dialog</h2>
