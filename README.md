@@ -43,9 +43,11 @@ dependencies {
 ```
 
 <h2>Nordan Loading Dialog</h2>
+
 ```diff
   NordanLoadingDialog.createLoadingDialog(this,"Loading...").show();
 ```
+
 ![](loadiing.gif)
 
 ## Animation
