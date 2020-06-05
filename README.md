@@ -53,13 +53,7 @@ dependencies {
 ## Animation
 
 ## Screenshots
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/error.jpg">
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/information.jpg">
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/success.jpg">
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/question.jpg">
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/default.jpg">
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/no_header.jpg">
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/loading.gif">
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs_small.jpg">
 
 ## Default dialogs types
 
