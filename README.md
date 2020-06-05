@@ -11,35 +11,33 @@ Add this to your module's `build.gradle` file:
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.Dan629pl:NordanMaterialDialog:1.0.0'
+	implementation 'com.github.Dan629pl:NordanMaterialDialog:1.0.2'
 }
 ```
 <h2>Nordan Alert Dialog</h2>
 
 ```diff
         new NordanAlertDialog.Builder(this)
-                .setDialogType(DialogType.INFORMATION)
                 .setAnimation(Animation.POP)
                 .isCancellable(false)
-                .setTitle("Information dialog")
-                .setMessage("This is INFORMATION dialog type in Nordan Material Dialog library.")
-                .setPositiveBtnText("OK")
+                .setTitle("Dialog Title")
+                .setMessage("Your message")
+                .setPositiveBtnText("Ok")
+                .setNegativeBtnText("Cancel")
+                .setIcon(R.drawable.your_drawable)
+                .setBackgroundColor(R.color.red)
                 .onPositiveClicked(() -> {/* Do something here */})
-                .show();
+                .onNegativeClicked(() -> {/* Do something here */})
+                .build().show();
 ```
 
 ```diff
-        new NordanAlertDialog.Builder(this)
-                .setDialogType(DialogType.QUESTION)
-                .setAnimation(Animation.POP)
-                .isCancellable(false)
-                .setTitle("Question dialog")
-                .setMessage("This is QUESTION dialog type in Nordan Material Dialog library.")
-                .setPositiveBtnText("Yes")
-                .setNegativeBtnText("No")
-                .onNegativeClicked(() -> {/* Do something here */})
-                .onPositiveClicked(() -> {/* Do something here */})
-                .show();
+              new NordanAlertDialog.Builder(this)
+                      .setTitle("Dialog Title")
+                      .setMessage("Your message")
+                      .setPositiveBtnText("single button")
+                      .onPositiveClicked(() -> {/* Do something here */})
+                      .build().show();
 ```
 
 <h2>Nordan Loading Dialog</h2>
