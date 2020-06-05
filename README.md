@@ -53,7 +53,8 @@ dependencies {
 ## Animation
 
 ## Screenshots
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs_small.png" style="height: auto !important;width: auto !important;">
+
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs_small.png">
 
 ## Default dialogs types
 
