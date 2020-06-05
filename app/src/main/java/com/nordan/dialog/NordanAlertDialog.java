@@ -124,12 +124,12 @@ public class NordanAlertDialog {
                         setQuestionDialog(iconImg, view);
                         break;
                     case NO_HEADER:
-                        setNoHeaderDialog(iconImg, view);
+                        setNoHeaderDialog(dialog);
                         break;
                     case INFORMATION:
                         setInformationDialog(iconImg, view);
                         break;
-                    case LEVEL_COMPLETE:
+                    case SUCCESS:
                         setLevelCompleteDialog(iconImg, view);
                         break;
                     default:
@@ -189,9 +189,8 @@ public class NordanAlertDialog {
             view.setBackgroundColor(activity.getColor(R.color.colorBlue));
         }
 
-        private void setNoHeaderDialog(GifImageView iconImg, View view) {
-            iconImg.setVisibility(View.GONE);
-            view.setVisibility(View.GONE);
+        private void setNoHeaderDialog(Dialog dialog) {
+            dialog.findViewById(R.id.relative_header).setVisibility(View.GONE);
         }
 
         private void setInformationDialog(GifImageView iconImg, View view) {

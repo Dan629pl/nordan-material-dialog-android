@@ -6,5 +6,5 @@ public enum DialogType {
     INFORMATION,
     NO_HEADER,
     QUESTION,
-    LEVEL_COMPLETE
+    SUCCESS
 }

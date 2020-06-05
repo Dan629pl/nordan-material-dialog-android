@@ -17,7 +17,37 @@ dependencies {
 <h2>Nordan Material Dialog</h2>
 
 ```diff
-<PUT CODE HERE>
+        new NordanAlertDialog.Builder(this)
+                .setDialogType(DialogType.INFORMATION)
+                .setAnimation(Animation.POP)
+                .isCancellable(false)
+                .setTitle("Information dialog")
+                .setMessage("This is INFORMATION dialog type in Nordan Material Dialog library.")
+                .setPositiveBtnText("OK")
+                .onPositiveClicked(() -> {/* Do something here */})
+                .show();
+```
+
+```diff
+        new NordanAlertDialog.Builder(this)
+                .setDialogType(DialogType.QUESTION)
+                .setAnimation(Animation.POP)
+                .isCancellable(false)
+                .setTitle("Question dialog")
+                .setMessage("This is QUESTION dialog type in Nordan Material Dialog library.")
+                .setPositiveBtnText("Yes")
+                .setNegativeBtnText("No")
+                .onNegativeClicked(() -> {/* Do something here */})
+                .onPositiveClicked(() -> {/* Do something here */})
+                .show();
+```
+
+
+```
+<h2>Nordan Loading Dialog</h2>
+
+```diff
+  NordanLoadingDialog.createLoadingDialog(this,"Loading...").show();
 ```
 
 ## Animation

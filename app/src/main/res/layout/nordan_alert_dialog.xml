@@ -23,7 +23,7 @@
         <View
           android:id="@+id/background"
           android:layout_width="match_parent"
-          android:layout_height="wrap_content"
+          android:layout_height="70dp"
           android:background="@color/transparent" />
         <pl.droidsonroids.gif.GifImageView
           android:id="@+id/icon"
