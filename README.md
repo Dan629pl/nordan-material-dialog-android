@@ -48,13 +48,13 @@ dependencies {
   NordanLoadingDialog.createLoadingDialog(this,"Loading...").show();
 ```
 
-![](https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/loadiing.gif)
+![](https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/loading.gif)
 
 ## Animation
 
 ## Screenshots
 
-![ScreenShot](https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs.png)
+![ScreenShot](https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs_small.png)
 
 ## Default dialogs types
 
