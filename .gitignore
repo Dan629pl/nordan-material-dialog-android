@@ -12,3 +12,6 @@
 /captures
 .externalNativeBuild
 .cxx
+/.idea/.name
+/.idea/compiler.xml
+/.idea/sonarlint/issuestore/index.pb
