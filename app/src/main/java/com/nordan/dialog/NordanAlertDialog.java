@@ -130,9 +130,10 @@ public class NordanAlertDialog {
                         setLevelCompleteDialog(iconImg, view);
                         break;
                     default:
-                        setCustomDialog(dialog, iconImg, view);
                         break;
                 }
+            } else {
+                setCustomDialog(dialog, iconImg, view);
             }
             if (positiveBtnText != null) {
                 positiveButton.setText(positiveBtnText);
