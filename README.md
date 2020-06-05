@@ -26,7 +26,7 @@ dependencies {
 ## Default dialogs types
 
 ## Donation
-If this library  help you reduce time to develop, you can buy me a book! :) 
+If this library  help you reduce time to develop, you can buy me a coffee! :) 
 
 <a href="https://www.buymeacoffee.com/Dan629"><img src="https://www.buymeacoffee.com/assets/img/bmc-meta-new/apple-icon-72x72.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
