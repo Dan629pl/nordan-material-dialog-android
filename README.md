@@ -48,7 +48,7 @@ dependencies {
   NordanLoadingDialog.createLoadingDialog(this,"Loading...").show();
 ```
 
-![](loadiing.gif)
+![](https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/loadiing.gif)
 
 ## Animation
 
