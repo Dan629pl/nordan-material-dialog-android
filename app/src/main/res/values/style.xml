@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <item name="colorAccent">@color/colorRed</item>
+  </style>
+
+
+  <style name="NordanDialogButtonTheme" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="singleLine">true</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:elegantTextHeight">true</item>
+    <item name="android:textColor">@color/grayFontColor</item>
+    <item name="fontFamily">@font/product_sans_bold</item>
+  </style>
+
+  <style name="NordanButtonTheme" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="singleLine">true</item>
+    <item name="android:elegantTextHeight">true</item>
+    <item name="android:textColor">@color/grayFontColor</item>
+    <item name="fontFamily">@font/product_sans_regular</item>
+  </style>
+
+  <style name="NordanTextBase">
+    <item name="android:gravity">center</item>
+    <item name="android:elegantTextHeight">true</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="NordanTextRegular" parent="NordanTextBase">
+    <item name="fontFamily">@font/product_sans_regular</item>
+  </style>
+
+  <style name="NordanTextBold" parent="NordanTextBase">
+    <item name="fontFamily">@font/product_sans_bold</item>
+  </style>
+
+  <style name="NordanTextBoldBig" parent="NordanTextBold">
+    <item name="android:textSize">32sp</item>
+  </style>
+
+  <style name="NordanTextBoldStandard" parent="NordanTextBold">
+    <item name="android:textSize">18sp</item>
+  </style>
+
+  <style name="NordanTextBoldSmall" parent="NordanTextBold">
+    <item name="android:textSize">16sp</item>
+  </style>
+
+  <style name="NordanTextRegularBig" parent="NordanTextRegular">
+    <item name="android:textSize">32sp</item>
+  </style>
+
+  <style name="NordanTextRegularStandard" parent="NordanTextRegular">
+    <item name="android:textSize">18sp</item>
+  </style>
+
+  <style name="NordanTextRegularSmall" parent="NordanTextRegular">
+    <item name="android:textSize">16sp</item>
+  </style>
+
+  <style name="NordanTextRegularGreyBig" parent="NordanTextRegularBig">
+    <item name="android:textColor">@color/grayFontColor</item>
+  </style>
+
+  <style name="NordanTextRegularGreyRegular" parent="NordanTextRegularStandard">
+    <item name="android:textColor">@color/grayFontColor</item>
+  </style>
+
+  <style name="NordanTextRegularGreySmall" parent="NordanTextRegularSmall">
+    <item name="android:textColor">@color/grayFontColor</item>
+  </style>
+
+  <style name="NordanTextBoldGreyBig" parent="NordanTextBoldBig">
+    <item name="android:textColor">@color/grayFontColor</item>
+  </style>
+
+  <style name="NordanTextBoldGreyRegular" parent="NordanTextBoldStandard">
+    <item name="android:textColor">@color/grayFontColor</item>
+  </style>
+
+  <style name="NordanTextBoldGreySmall" parent="NordanTextBoldSmall">
+    <item name="android:textColor">@color/grayFontColor</item>
+  </style>
+
+  <style name="NordanDialogPopTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+    <item name="android:windowAnimationStyle">@style/NordanDialogPopTheme1</item>
+  </style>
+
+  <style name="NordanDialogPopTheme1">
+    <item name="android:windowEnterAnimation">@anim/pop_in</item>
+    <item name="android:windowExitAnimation">@anim/pop_out</item>
+  </style>
+
+  <style name="NordanDialogSideTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+    <item name="android:windowAnimationStyle">@style/NordanDialogSideTheme1</item>
+  </style>
+
+  <style name="NordanDialogSideTheme1">
+    <item name="android:windowEnterAnimation">@anim/side_in</item>
+    <item name="android:windowExitAnimation">@anim/side_out</item>
+  </style>
+
+  <style name="NordanDialogSlideTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+    <item name="android:windowAnimationStyle">@style/NordanDialogSlideTheme1</item>
+  </style>
+
+  <style name="NordanDialogSlideTheme1">
+    <item name="android:windowEnterAnimation">@anim/slide_in</item>
+    <item name="android:windowExitAnimation">@anim/slide_out</item>
+  </style>
+
+</resources>

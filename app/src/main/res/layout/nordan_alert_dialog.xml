@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/transparent"
+  android:orientation="vertical">
+  <com.google.android.material.card.MaterialCardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="16dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <View
+          android:id="@+id/background"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/transparent" />
+        <pl.droidsonroids.gif.GifImageView
+          android:id="@+id/icon"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_centerInParent="true"
+          android:visibility="gone" />
+      </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_header"
+        android:padding="16dp">
+        <com.google.android.material.textview.MaterialTextView
+          android:id="@+id/title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:elegantTextHeight="true"
+          android:fontFamily="@font/product_sans_bold"
+          android:gravity="center"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp"
+          android:text="@string/dialog_tittle"
+          android:textAlignment="center"
+          android:textColor="@color/grayFontColor"
+          android:textSize="18sp" />
+        <com.google.android.material.textview.MaterialTextView
+          android:id="@+id/message"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/title"
+          android:layout_marginTop="16dp"
+          android:elegantTextHeight="true"
+          android:fontFamily="@font/product_sans_regular"
+          android:gravity="center"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:text="@string/dialog_message"
+          android:textAlignment="center"
+          android:textSize="16sp" />
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/message"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+          android:gravity="center_horizontal"
+          android:orientation="horizontal"
+          android:weightSum="100">
+          <com.google.android.material.button.MaterialButton
+            android:id="@+id/negativeBtn"
+            style="@style/NordanDialogButtonTheme"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="50"
+            android:text="@android:string/cancel" />
+          <com.google.android.material.button.MaterialButton
+            android:id="@+id/positiveBtn"
+            style="@style/NordanDialogButtonTheme"
+            android:layout_weight="50"
+            android:text="@android:string/ok" />
+        </LinearLayout>
+      </RelativeLayout>
+    </RelativeLayout>
+  </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
