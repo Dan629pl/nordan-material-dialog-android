@@ -14,9 +14,9 @@ dependencies {
 	implementation 'com.github.Dan629pl:NordanMaterialDialog:1.0.2'
 }
 ```
-<h2>Nordan Alert Dialog</h2>
+<h1>Nordan Alert Dialog</h1>
 
-<h1>Custom Dialog</h1>
+<h3>Custom Dialog</h3>
 
 ```diff
         new NordanAlertDialog.Builder(this)
@@ -32,7 +32,7 @@ dependencies {
                 .onNegativeClicked(() -> {/* Do something here */})
                 .build().show();
 ```
-<h1>Minimal Dialog</h1>
+<h3>Minimal Dialog</h3>
 
 ```diff
               new NordanAlertDialog.Builder(this)
@@ -42,7 +42,7 @@ dependencies {
                       .onPositiveClicked(() -> {/* Do something here */})
                       .build().show();
 ```
-<h1>Dialog with DialogType</h1>
+<h3>Dialog with DialogType</h3>
 
 ```diff
         new NordanAlertDialog.Builder(this)
@@ -56,7 +56,7 @@ dependencies {
                     .build().show();
 ```
 
-<h2>Nordan Loading Dialog</h2>
+<h1>Nordan Loading Dialog</h1>
 
 ```diff
   NordanLoadingDialog.createLoadingDialog(this,"Loading...").show();
