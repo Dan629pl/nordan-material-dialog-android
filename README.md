@@ -47,13 +47,13 @@ dependencies {
 ```diff
   NordanLoadingDialog.createLoadingDialog(this,"Loading...").show();
 ```
-![Loading Dialog](https://raw.github.com/{Dan629pl}/{NordanMaterialDialog}/tree/master/img/loading.gif)
+![Loading Dialog](https://github.com/Dan629pl/NordanMaterialDialog/blob/master/img/loading.gif)
 
 ## Animation
 
 ## Screenshots
 
-![Loading Dialog](https://raw.github.com/{Dan629pl}/{NordanMaterialDialog}/tree/master/img/dialogs_small.gif)
+![Loading Dialog](https://github.com/Dan629pl/NordanMaterialDialog/blob/master/img/dialogs.png)
 
 ## Default dialogs types
 
