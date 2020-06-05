@@ -19,7 +19,8 @@ dependencies {
 ```diff
 <PUT CODE HERE>
 ```
-#### Animation
+
+## Animation
 
 ## Screenshots
 
