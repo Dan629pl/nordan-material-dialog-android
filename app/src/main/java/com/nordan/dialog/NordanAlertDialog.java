@@ -9,12 +9,12 @@ import android.view.Window;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 import java.util.Optional;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 import pl.droidsonroids.gif.GifImageView;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class NordanAlertDialog {
-
-    private NordanAlertDialog() {
-    }
 
     public static class Builder {
 
@@ -90,7 +90,7 @@ public class NordanAlertDialog {
             return this;
         }
 
-        public void show() {
+        public Dialog build() {
             final MaterialTextView messageDialog;
             final MaterialTextView titleDialog;
             final GifImageView iconImg;
@@ -123,9 +123,6 @@ public class NordanAlertDialog {
                     case QUESTION:
                         setQuestionDialog(iconImg, view);
                         break;
-                    case NO_HEADER:
-                        setNoHeaderDialog(dialog);
-                        break;
                     case INFORMATION:
                         setInformationDialog(iconImg, view);
                         break;
@@ -133,7 +130,7 @@ public class NordanAlertDialog {
                         setLevelCompleteDialog(iconImg, view);
                         break;
                     default:
-                        setCustomDialog(iconImg, view);
+                        setCustomDialog(dialog, iconImg, view);
                         break;
                 }
             }
@@ -162,7 +159,7 @@ public class NordanAlertDialog {
             } else {
                 negativeButton.setOnClickListener(click -> dialog.dismiss());
             }
-            dialog.show();
+            return dialog;
         }
 
         private void setLevelCompleteDialog(GifImageView iconImg, View view) {
@@ -189,17 +186,17 @@ public class NordanAlertDialog {
             view.setBackgroundColor(activity.getColor(R.color.colorBlue));
         }
 
-        private void setNoHeaderDialog(Dialog dialog) {
-            dialog.findViewById(R.id.relative_header).setVisibility(View.GONE);
-        }
-
         private void setInformationDialog(GifImageView iconImg, View view) {
             iconImg.setImageResource(R.drawable.ic_baseline_info_24);
             iconImg.setVisibility(View.VISIBLE);
             view.setBackgroundColor(activity.getColor(R.color.colorPurple));
         }
 
-        private void setCustomDialog(GifImageView iconImg, View view) {
+        private void setCustomDialog(Dialog dialog, GifImageView iconImg, View view) {
+            if (icon == 0 && backgroundColor == 0) {
+                dialog.findViewById(R.id.relative_header).setVisibility(View.GONE);
+                return;
+            }
             if (icon != 0) {
                 iconImg.setImageResource(icon);
                 iconImg.setVisibility(View.VISIBLE);

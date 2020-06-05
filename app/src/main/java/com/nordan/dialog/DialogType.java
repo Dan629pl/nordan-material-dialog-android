@@ -4,7 +4,6 @@ public enum DialogType {
     WARNING,
     ERROR,
     INFORMATION,
-    NO_HEADER,
     QUESTION,
     SUCCESS
 }
