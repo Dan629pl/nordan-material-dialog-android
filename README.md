@@ -14,7 +14,7 @@ dependencies {
 	implementation 'com.github.Dan629pl:NordanMaterialDialog:1.0.1'
 }
 ```
-<h2>Nordan Material Dialog</h2>
+<h2>Nordan Alert Dialog</h2>
 
 ```diff
         new NordanAlertDialog.Builder(this)
@@ -49,13 +49,9 @@ dependencies {
 ```
 ![Loading Dialog](https://github.com/Dan629pl/NordanMaterialDialog/blob/master/img/loading.gif)
 
-## Animation
-
-## Screenshots
+## Screenshot
 
 ![Dialogs](https://github.com/Dan629pl/NordanMaterialDialog/blob/master/img/dialogs.png)
-
-## Default dialogs types
 
 ## Donation
 If this library  help you reduce time to develop, you can buy me a coffee! :) 
