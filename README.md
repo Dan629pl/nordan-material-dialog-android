@@ -11,7 +11,7 @@ Add this to your module's `build.gradle` file:
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.Dan629pl:NordanMaterialDialog:1.0'
+	implementation 'com.github.Dan629pl:NordanMaterialDialog:1.0.1'
 }
 ```
 <h2>Nordan Material Dialog</h2>
@@ -53,6 +53,13 @@ dependencies {
 ## Animation
 
 ## Screenshots
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/img/error.jpg">
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/img/information.jpg">
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/img/success.jpg">
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/img/question.jpg">
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/img/default.jpg">
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/img/no_header.jpg">
+<img src="https://github.com/Dan629pl/NordanMaterialDialog/img/loading.gif">
 
 ## Default dialogs types
 
