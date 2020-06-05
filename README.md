@@ -11,7 +11,7 @@ Add this to your module's `build.gradle` file:
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.Dan629pl:NordanMaterialDialog:1.0.2'
+	implementation 'com.github.Dan629pl:NordanMaterialDialog:1.0.3'
 }
 ```
 <h1>Nordan Alert Dialog</h1>
@@ -26,7 +26,7 @@ dependencies {
                 .setMessage("Your message")
                 .setPositiveBtnText("Ok")
                 .setNegativeBtnText("Cancel")
-                .setIcon(R.drawable.your_drawable)
+                .setIcon(R.drawable.your_drawable,false)
                 .setBackgroundColor(R.color.red)
                 .onPositiveClicked(() -> {/* Do something here */})
                 .onNegativeClicked(() -> {/* Do something here */})
@@ -55,6 +55,22 @@ dependencies {
                     .onPositiveClicked(() -> {/* Do something here */})
                     .build().show();
 ```
+
+<h3>Dialog with Gif icon</h3>
+
+```diff
+         new NordanAlertDialog.Builder(this)
+                        .setAnimation(Animation.SLIDE)
+                        .isCancellable(false)
+                        .setTitle("Gif Icon")
+                        .setMessage("Library support gif icons!")
+                        .setIcon(R.drawable.success_gif,true)
+                        .setPositiveBtnText("Great!")
+                        .onPositiveClicked(this::showAll)
+                        .build().show();
+```
+![Gif Dialog](https://github.com/Dan629pl/NordanMaterialDialog/blob/master/img/gifdialog.gif)
+
 
 <h1>Nordan Loading Dialog</h1>
 

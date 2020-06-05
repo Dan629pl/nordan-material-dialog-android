@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageView.ScaleType;
+import android.widget.RelativeLayout;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 import java.util.Optional;
@@ -25,6 +27,7 @@ public class NordanAlertDialog {
         private Activity activity;
         private Animation animation;
         private int icon;
+        private boolean isGif;
         private NordanAlertDialogListener positiveListener;
         private NordanAlertDialogListener negativeListener;
         private int backgroundColor;
@@ -65,8 +68,9 @@ public class NordanAlertDialog {
             return this;
         }
 
-        public Builder setIcon(int icon) {
+        public Builder setIcon(int icon, boolean isGif) {
             this.icon = icon;
+            this.isGif = isGif;
             return this;
         }
 
@@ -194,13 +198,18 @@ public class NordanAlertDialog {
         }
 
         private void setCustomDialog(Dialog dialog, GifImageView iconImg, View view) {
+            RelativeLayout relativeHeader = dialog.findViewById(R.id.relative_header);
             if (icon == 0 && backgroundColor == 0) {
-                dialog.findViewById(R.id.relative_header).setVisibility(View.GONE);
+                relativeHeader.setVisibility(View.GONE);
                 return;
             }
             if (icon != 0) {
                 iconImg.setImageResource(icon);
                 iconImg.setVisibility(View.VISIBLE);
+                if (isGif) {
+                    relativeHeader.getLayoutParams().height = 250;
+                    iconImg.setScaleType(ScaleType.CENTER_CROP);
+                }
             }
             if (backgroundColor != 0) {
                 view.setBackgroundColor(backgroundColor);

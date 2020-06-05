@@ -19,16 +19,17 @@
       <RelativeLayout
         android:id="@+id/relative_header"
         android:layout_width="match_parent"
-        android:layout_height="70dp">
+        android:layout_height="wrap_content">
         <View
           android:id="@+id/background"
           android:layout_width="match_parent"
-          android:layout_height="70dp"
+          android:layout_height="80dp"
           android:background="@color/transparent" />
         <pl.droidsonroids.gif.GifImageView
           android:id="@+id/icon"
           android:layout_width="match_parent"
-          android:layout_height="60dp"
+          android:layout_height="wrap_content"
+          android:minHeight="70dp"
           android:layout_centerInParent="true"
           android:visibility="gone" />
       </RelativeLayout>
