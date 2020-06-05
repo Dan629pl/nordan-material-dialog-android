@@ -42,19 +42,16 @@ dependencies {
                 .show();
 ```
 
-
-```
 <h2>Nordan Loading Dialog</h2>
-
 ```diff
   NordanLoadingDialog.createLoadingDialog(this,"Loading...").show();
 ```
+![](loadiing.gif)
 
 ## Animation
 
 ## Screenshots
-
-<img src="https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs.png">
+![Alt text](https://github.com/Dan629pl/NordanMaterialDialog/tree/master/img/dialogs.png "Dialogs")
 
 ## Default dialogs types
 
