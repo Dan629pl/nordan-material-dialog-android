@@ -53,7 +53,7 @@ dependencies {
 
 ## Screenshots
 
-![Loading Dialog](https://github.com/Dan629pl/NordanMaterialDialog/blob/master/img/dialogs.png)
+![Dialogs](https://github.com/Dan629pl/NordanMaterialDialog/blob/master/img/dialogs.png)
 
 ## Default dialogs types
 
