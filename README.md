@@ -18,7 +18,8 @@ dependencies {
 
 <h3>Custom Dialog</h3>
 
-```diff
+```java
+        ...
         new NordanAlertDialog.Builder(this)
                 .setAnimation(Animation.POP)
                 .isCancellable(false)
@@ -31,10 +32,11 @@ dependencies {
                 .onPositiveClicked(() -> {/* Do something here */})
                 .onNegativeClicked(() -> {/* Do something here */})
                 .build().show();
+        ...
 ```
 <h3>Minimal Dialog</h3>
 
-```diff
+```java
               new NordanAlertDialog.Builder(this)
                       .setTitle("Dialog Title")
                       .setMessage("Your message")
@@ -44,7 +46,7 @@ dependencies {
 ```
 <h3>Dialog with DialogType</h3>
 
-```diff
+```java
         new NordanAlertDialog.Builder(this)
                     .setDialogType(DialogType.SUCCESS)
                     .setAnimation(Animation.SLIDE)
@@ -58,7 +60,7 @@ dependencies {
 
 <h3>Dialog with Gif icon</h3>
 
-```diff
+```java
          new NordanAlertDialog.Builder(this)
                         .setAnimation(Animation.SLIDE)
                         .isCancellable(false)
@@ -74,7 +76,7 @@ dependencies {
 
 <h1>Nordan Loading Dialog</h1>
 
-```diff
+```java
   NordanLoadingDialog.createLoadingDialog(this,"Loading...").show();
 ```
 ![Loading Dialog](https://github.com/Dan629pl/NordanMaterialDialog/blob/master/img/loading.gif)
