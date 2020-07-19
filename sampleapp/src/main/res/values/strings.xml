@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">SampleApp</string>
+  <string name="default_dialogs">Default dialogs</string>
+  <string name="create_your_dialog">Create your dialog</string>
+  <string name="dialog_creator">Dialog Creator</string>
+  <string name="tittle">Tittle</string>
+  <string name="animation">Animation</string>
+  <string name="none">None</string>
+</resources>
