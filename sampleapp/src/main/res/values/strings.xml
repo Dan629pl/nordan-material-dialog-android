@@ -1,9 +1,18 @@
 <resources>
-  <string name="app_name">SampleApp</string>
-  <string name="default_dialogs">Default dialogs</string>
-  <string name="create_your_dialog">Create your dialog</string>
-  <string name="dialog_creator">Dialog Creator</string>
-  <string name="tittle">Tittle</string>
-  <string name="animation">Animation</string>
-  <string name="none">None</string>
+    <string name="app_name">SampleApp</string>
+    <string name="default_dialogs">Default dialogs</string>
+    <string name="create_your_dialog">Create your dialog</string>
+    <string name="dialog_creator">Dialog Creator</string>
+    <string name="tittle">Tittle</string>
+    <string name="animation">Animation</string>
+    <string name="none">NONE</string>
+    <string name="item_tittle">Item tittle</string>
+    <string name="reset">Reset</string>
+    <string name="show">Show</string>
+    <string name="cancellable">Cancellable</string>
+    <string name="dialog_message">Message</string>
+    <string name="negative_button_name">Negative button (Optional)</string>
+    <string name="positive_button_name">Positive button (Default OK)</string>
+    <string name="header_color">Header color</string>
+    <string name="accent_color">Accent color</string>
 </resources>

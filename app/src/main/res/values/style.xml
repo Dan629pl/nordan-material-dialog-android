@@ -5,30 +5,27 @@
     <item name="colorAccent">@color/colorRed</item>
   </style>
 
+    <style name="NordanDialogButtonTheme">
+        <item name="singleLine">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:elegantTextHeight">true</item>
+        <item name="fontFamily">@font/product_sans_bold</item>
+    </style>
 
-  <style name="NordanDialogButtonTheme" parent="Widget.MaterialComponents.Button.OutlinedButton">
-    <item name="singleLine">true</item>
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:elegantTextHeight">true</item>
-    <item name="android:textColor">@color/grayFontColor</item>
-    <item name="fontFamily">@font/product_sans_bold</item>
-  </style>
+    <style name="NordanDialogButtonTextTheme" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="singleLine">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:elegantTextHeight">true</item>
+        <item name="fontFamily">@font/product_sans_bold</item>
+    </style>
 
-  <style name="NordanButtonTheme" parent="Widget.MaterialComponents.Button.OutlinedButton">
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="singleLine">true</item>
-    <item name="android:elegantTextHeight">true</item>
-    <item name="android:textColor">@color/grayFontColor</item>
-    <item name="fontFamily">@font/product_sans_regular</item>
-  </style>
-
-  <style name="NordanTextBase">
-    <item name="android:gravity">center</item>
-    <item name="android:elegantTextHeight">true</item>
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">wrap_content</item>
+    <style name="NordanTextBase">
+        <item name="android:gravity">center</item>
+        <item name="android:elegantTextHeight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
   </style>
 
   <style name="NordanTextRegular" parent="NordanTextBase">

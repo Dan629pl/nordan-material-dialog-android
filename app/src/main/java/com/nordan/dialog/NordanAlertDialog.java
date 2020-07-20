@@ -2,15 +2,19 @@ package com.nordan.dialog;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView.ScaleType;
 import android.widget.RelativeLayout;
+
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
+
 import java.util.Optional;
+
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import pl.droidsonroids.gif.GifImageView;
@@ -26,11 +30,13 @@ public class NordanAlertDialog {
         private String negativeBtnText;
         private Activity activity;
         private Animation animation;
-        private int icon;
+        private int headerIconResource;
+        private int dialogAccentColor;
+        private Bitmap headerIconDrawable;
         private boolean isGif;
         private NordanAlertDialogListener positiveListener;
         private NordanAlertDialogListener negativeListener;
-        private int backgroundColor;
+        private int headerColor;
         private boolean isCancelable;
         private DialogType dialogType;
 
@@ -48,8 +54,13 @@ public class NordanAlertDialog {
             return this;
         }
 
-        public Builder setBackgroundColor(int bgColor) {
-            this.backgroundColor = bgColor;
+        public Builder setDialogAccentColor(int color) {
+            this.dialogAccentColor = color;
+            return this;
+        }
+
+        public Builder setHeaderColor(int bgColor) {
+            this.headerColor = bgColor;
             return this;
         }
 
@@ -69,7 +80,13 @@ public class NordanAlertDialog {
         }
 
         public Builder setIcon(int icon, boolean isGif) {
-            this.icon = icon;
+            this.headerIconResource = icon;
+            this.isGif = isGif;
+            return this;
+        }
+
+        public Builder setIcon(Bitmap icon, boolean isGif) {
+            this.headerIconDrawable = icon;
             this.isGif = isGif;
             return this;
         }
@@ -139,15 +156,15 @@ public class NordanAlertDialog {
             } else {
                 setCustomDialog(dialog, iconImg, view);
             }
-            if (positiveBtnText != null) {
+            if (positiveBtnText != null && !positiveBtnText.isEmpty()) {
                 positiveButton.setText(positiveBtnText);
             }
-            if (negativeBtnText != null) {
+            if (negativeBtnText != null && !negativeBtnText.isEmpty()) {
                 negativeButton.setText(negativeBtnText);
             } else {
                 negativeButton.setVisibility(View.GONE);
             }
-            if (positiveListener != null) {
+            if (positiveListener != null && positiveBtnText != null && !positiveBtnText.isEmpty()) {
                 positiveButton.setOnClickListener(click -> {
                     positiveListener.onClick();
                     dialog.dismiss();
@@ -155,7 +172,7 @@ public class NordanAlertDialog {
             } else {
                 positiveButton.setOnClickListener(click -> dialog.dismiss());
             }
-            if (negativeListener != null) {
+            if (negativeListener != null && negativeBtnText != null && !negativeBtnText.isEmpty()) {
                 negativeButton.setVisibility(View.VISIBLE);
                 negativeButton.setOnClickListener(view1 -> {
                     negativeListener.onClick();
@@ -163,6 +180,10 @@ public class NordanAlertDialog {
                 });
             } else {
                 negativeButton.setOnClickListener(click -> dialog.dismiss());
+            }
+            if (dialogAccentColor > 0) {
+                positiveButton.setBackgroundColor(activity.getColor(dialogAccentColor));
+                negativeButton.setTextColor(activity.getColor(dialogAccentColor));
             }
             return dialog;
         }
@@ -199,20 +220,20 @@ public class NordanAlertDialog {
 
         private void setCustomDialog(Dialog dialog, GifImageView iconImg, View view) {
             RelativeLayout relativeHeader = dialog.findViewById(R.id.relative_header);
-            if (icon == 0 && backgroundColor == 0) {
+            if (headerIconResource == 0 && headerColor == 0 && headerIconDrawable == null) {
                 relativeHeader.setVisibility(View.GONE);
                 return;
             }
-            if (icon != 0) {
-                iconImg.setImageResource(icon);
+            if (headerIconResource != 0) {
+                iconImg.setImageResource(headerIconResource);
                 iconImg.setVisibility(View.VISIBLE);
                 if (isGif) {
                     relativeHeader.getLayoutParams().height = 250;
                     iconImg.setScaleType(ScaleType.CENTER_CROP);
                 }
             }
-            if (backgroundColor != 0) {
-                view.setBackgroundColor(backgroundColor);
+            if (headerColor != 0) {
+                view.setBackgroundColor(headerColor);
             }
         }
 
