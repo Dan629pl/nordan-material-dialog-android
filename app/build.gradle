@@ -8,7 +8,7 @@ android {
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
-        versionName "Nordan Material Dialog v1.0.5"
+        versionName "Nordan Material Dialog v1.0.6"
     }
 
     buildTypes {

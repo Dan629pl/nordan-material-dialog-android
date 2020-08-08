@@ -10,11 +10,12 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-        android:fontFamily="@font/product_sans_bold"
+        android:fontFamily="@font/product_sans_regular"
         android:text="@string/dialog_creator"
         android:textAlignment="center"
         android:textColor="@color/grayFontColor"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textStyle="bold" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

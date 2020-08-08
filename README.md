@@ -11,7 +11,7 @@ Add this to your module's `build.gradle` file:
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.Dan629pl:nordan-material-dialog-android:1.0.5'
+	implementation 'com.github.Dan629pl:nordan-material-dialog-android:1.0.6'
 }
 ```
 <h1>Nordan Alert Dialog</h1>
