@@ -18,10 +18,14 @@ import lombok.NoArgsConstructor;
 public class NordanLoadingDialog {
 
     public static Dialog createLoadingDialog(Activity activity, String loadingText) {
-        return createLoadingDialog(activity, loadingText, 0);
+        return createLoadingDialog(activity, loadingText, 0, -1);
     }
 
     public static Dialog createLoadingDialog(Activity activity, String loadingText, int accentColor) {
+        return createLoadingDialog(activity, loadingText, accentColor, -1);
+    }
+
+    public static Dialog createLoadingDialog(Activity activity, String loadingText, int accentColor, int progress) {
         Dialog loadingDialog = new Dialog(activity);
         loadingDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         Optional.ofNullable(loadingDialog.getWindow())
@@ -32,6 +36,10 @@ public class NordanLoadingDialog {
         ProgressBar loadingBar = loadingDialog.findViewById(R.id.progress_bar);
         if (accentColor > 0) {
             loadingBar.getIndeterminateDrawable().setColorFilter(activity.getColor(accentColor), android.graphics.PorterDuff.Mode.MULTIPLY);
+        }
+        if (progress > -1) {
+            loadingBar.setIndeterminate(false);
+            loadingBar.setProgress(progress);
         }
         return loadingDialog;
     }
